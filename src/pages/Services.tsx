@@ -115,17 +115,17 @@ const Services = () => {
       <Header />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-hero py-20 relative overflow-hidden">
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl" />
+        <section className="bg-[#1f3759] py-20 relative overflow-hidden">
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#960f1e]/10 rounded-full blur-3xl" />
           <div className="container relative z-10">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/10 text-gold text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#960f1e]/10 text-[#960f1e] text-sm font-semibold font-['Montserrat'] mb-6">
                 {t("servicesPage.badge")}
               </div>
-              <h1 className="font-display text-4xl sm:text-5xl font-bold text-primary-foreground mb-6">
-                {t("servicesPage.title1")} <span className="text-gradient-gold">{t("servicesPage.titleHighlight")}</span>
+              <h1 className="font-['Montserrat'] text-4xl sm:text-5xl font-bold text-[#dfdcd3] mb-6">
+                {t("servicesPage.title1")} <span className="text-[#960f1e]">{t("servicesPage.titleHighlight")}</span>
               </h1>
-              <p className="text-xl text-primary-foreground/80">
+              <p className="font-['Anek_Kannada'] font-semibold text-xl text-[#dfdcd3]/80">
                 {t("servicesPage.description")}
               </p>
             </div>
@@ -133,7 +133,7 @@ const Services = () => {
         </section>
 
         {/* Main Services */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-[#dfdcd3]">
           <div className="container">
             <div className="space-y-16">
               {mainServices.map((service, index) => (
@@ -149,11 +149,11 @@ const Services = () => {
                     <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${service.color}/10 mb-6`}>
                       <service.icon className={`h-8 w-8 ${service.color.replace('bg-', 'text-').replace('-500', '-600')}`} />
                     </div>
-                    <h2 className="font-display text-3xl font-bold text-foreground mb-2">
+                    <h2 className="font-['Montserrat'] text-3xl font-bold text-[#1f3759] mb-2">
                       {service.title}
                     </h2>
-                    <p className="text-gold font-medium mb-4">{service.subtitle}</p>
-                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                    <p className="text-[#960f1e] font-semibold font-['Anek_Kannada'] mb-4">{service.subtitle}</p>
+                    <p className="font-['Anek_Kannada'] font-semibold text-[#1f3759]/80 mb-6 leading-relaxed">
                       {service.description}
                     </p>
                     
@@ -184,11 +184,11 @@ const Services = () => {
                       {/* Highlight Badge */}
                       <div className="relative z-10 text-center mb-8">
                         <div className={`inline-block px-6 py-2 rounded-full ${service.color}/10 mb-4`}>
-                          <span className="font-display text-4xl font-bold text-foreground">
+                          <span className="font-['Montserrat'] text-4xl font-bold text-[#1f3759]">
                             {service.highlight}
                           </span>
                         </div>
-                        <p className="text-sm text-muted-foreground">{service.highlightLabel}</p>
+                        <p className="font-['Anek_Kannada'] font-semibold text-sm text-[#1f3759]/80">{service.highlightLabel}</p>
                       </div>
 
                       {/* Calculator Preview */}
@@ -222,13 +222,13 @@ const Services = () => {
         </section>
 
         {/* Additional Services */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-20 bg-[#dfdcd3]/30">
           <div className="container">
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="font-display text-3xl font-bold text-foreground mb-4">
-                {t("servicesPage.moreServices")} <span className="text-gradient-gold">{t("servicesPage.moreServicesHighlight")}</span>
+              <h2 className="font-['Montserrat'] text-3xl font-bold text-[#1f3759] mb-4">
+                {t("servicesPage.moreServices")} <span className="text-[#960f1e]">{t("servicesPage.moreServicesHighlight")}</span>
               </h2>
-              <p className="text-muted-foreground">
+              <p className="font-['Anek_Kannada'] font-semibold text-[#1f3759]/80">
                 {t("servicesPage.moreServicesDesc")}
               </p>
             </div>
@@ -239,13 +239,13 @@ const Services = () => {
                   key={service.title}
                   className="bg-card rounded-xl p-6 border border-border hover:shadow-lg hover:border-gold/30 transition-all"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-gradient-navy flex items-center justify-center mb-4">
-                    <service.icon className="h-6 w-6 text-gold" />
+                  <div className="w-12 h-12 rounded-xl bg-[#1f3759] flex items-center justify-center mb-4">
+                    <service.icon className="h-6 w-6 text-[#960f1e]" />
                   </div>
-                  <h3 className="font-display text-lg font-semibold text-foreground mb-2">
+                  <h3 className="font-['Montserrat'] text-lg font-semibold text-[#1f3759] mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground">{service.description}</p>
+                  <p className="font-['Anek_Kannada'] font-semibold text-sm text-[#1f3759]/80">{service.description}</p>
                 </div>
               ))}
             </div>
@@ -253,13 +253,13 @@ const Services = () => {
         </section>
 
         {/* CTA */}
-        <section className="py-20 bg-gradient-hero">
+        <section className="py-20 bg-[#dfdcd3]">
           <div className="container">
             <div className="max-w-2xl mx-auto text-center">
-              <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">
+              <h2 className="font-['Montserrat'] text-3xl font-bold text-[#1f3759] mb-4">
                 {t("servicesPage.readyTitle")}
               </h2>
-              <p className="text-primary-foreground/80 mb-8">
+              <p className="font-['Anek_Kannada'] font-semibold text-[#1f3759]/80 mb-8">
                 {t("servicesPage.readyDesc")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

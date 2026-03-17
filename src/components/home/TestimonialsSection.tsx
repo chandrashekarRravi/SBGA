@@ -29,17 +29,17 @@ export function TestimonialsSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-[#dfdcd3]">
       <div className="container">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/10 text-gold text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#960f1e]/10 text-[#960f1e] text-sm font-semibold font-['Montserrat'] mb-4">
             {t("testimonials.badge")}
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            {t("testimonials.title1")} <span className="text-gradient-gold">{t("testimonials.titleHighlight")}</span>
+          <h2 className="font-['Montserrat'] text-3xl sm:text-4xl font-bold text-[#1f3759] mb-4">
+            {t("testimonials.title1")} <span className="text-[#960f1e]">{t("testimonials.titleHighlight")}</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="font-['Anek_Kannada'] font-semibold text-lg text-[#1f3759]/80">
             {t("testimonials.description")}
           </p>
         </div>
@@ -53,29 +53,29 @@ export function TestimonialsSection() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="absolute -top-4 left-8">
-                <div className="w-8 h-8 rounded-full bg-gold flex items-center justify-center shadow-md">
-                  <Quote className="h-4 w-4 text-navy-dark" />
+                <div className="w-8 h-8 rounded-full bg-[#960f1e] flex items-center justify-center shadow-md">
+                  <Quote className="h-4 w-4 text-[#1f3759]" />
                 </div>
               </div>
               <div className="flex items-center gap-1 mb-4 pt-2">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-gold text-gold" />
+                  <Star key={i} className="h-4 w-4 fill-[#960f1e] text-[#960f1e]" />
                 ))}
               </div>
-              <p className="text-muted-foreground leading-relaxed mb-6 italic">
+              <p className="font-['Anek_Kannada'] font-semibold text-[#1f3759]/80 leading-relaxed mb-6 italic">
                 "{testimonial.content}"
               </p>
               <div className="flex items-center gap-4">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover border-2 border-gold/20"
+                  className="w-12 h-12 rounded-full object-cover border-2 border-[#960f1e]/20"
                 />
                 <div>
-                  <div className="font-semibold text-foreground">
+                  <div className="font-['Montserrat'] font-semibold text-[#1f3759]">
                     {testimonial.name}
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="font-['Anek_Kannada'] font-semibold text-sm text-[#1f3759]/80">
                     {testimonial.role}
                   </div>
                 </div>

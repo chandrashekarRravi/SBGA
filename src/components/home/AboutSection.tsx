@@ -28,18 +28,18 @@ export function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-muted/30">
+    <section id="about" className="py-20 bg-[#dfdcd3]/30">
       <div className="container">
         {/* Top Row: Text + Image */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#960f1e]/10 text-[#960f1e] text-sm font-semibold font-['Montserrat'] mb-4">
               {t("about.badge")}
             </div>
-            <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground mb-6">
-              {t("about.title1")} <span className="text-gradient-gold">{t("about.titleHighlight")}</span> {t("about.title2")}
+            <h2 className="font-['Montserrat'] text-2xl sm:text-3xl font-bold text-[#1f3759] mb-6">
+              {t("about.title1")} <span className="text-[#960f1e]">{t("about.titleHighlight")}</span> {t("about.title2")}
             </h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <div className="space-y-4 font-['Anek_Kannada'] font-semibold text-[#1f3759]/80 leading-relaxed">
               <p>{t("about.p1")}</p>
               <p>{t("about.p2")}</p>
             </div>
@@ -72,9 +72,9 @@ export function AboutSection() {
               />
             </div>
             {/* Decorative overlay badge */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-navy text-primary-foreground px-6 py-4 rounded-xl shadow-xl text-center z-10">
-              <div className="font-display text-2xl font-bold text-gold">29+</div>
-              <div className="text-sm text-primary-foreground/80">{t("about.yearsServing") || "Years Serving"}</div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#1f3759] text-[#dfdcd3] px-6 py-4 rounded-xl shadow-xl text-center z-10">
+              <div className="font-['Montserrat'] text-2xl font-bold text-[#960f1e]">29+</div>
+              <div className="font-['Anek_Kannada'] font-semibold text-sm text-[#dfdcd3]/80">{t("about.yearsServing") || "Years Serving"}</div>
             </div>
           </div>
         </div>
@@ -86,13 +86,13 @@ export function AboutSection() {
               key={value.title}
               className="text-center p-6 rounded-xl bg-card border border-border hover:shadow-lg hover:border-gold/30 transition-all"
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-navy mb-4">
-                <value.icon className="h-7 w-7 text-gold" />
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-[#1f3759] mb-4">
+                <value.icon className="h-7 w-7 text-[#960f1e]" />
               </div>
-              <h3 className="font-display text-lg font-semibold text-foreground mb-2">
+              <h3 className="font-['Montserrat'] text-lg font-semibold text-[#1f3759] mb-2">
                 {value.title}
               </h3>
-              <p className="text-sm text-muted-foreground">{value.description}</p>
+              <p className="font-['Anek_Kannada'] font-semibold text-sm text-[#1f3759]/80">{value.description}</p>
             </div>
           ))}
         </div>

@@ -29,14 +29,14 @@ export function Header() {
       <div className="container flex h-20 items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-navy shadow-md group-hover:shadow-lg transition-shadow">
-            <Shield className="h-6 w-6 text-gold" />
+          <div className="flex h-12 w-12 items-center justify-center rounded-full  transition-shadow">
+            <img src="/SBGA.png" alt="SBGA Logo" className="h-12 drop-shadow-8xl shadow-blue-500" />
           </div>
           <div className="hidden sm:block">
-            <h1 className="font-display text-lg font-bold text-primary leading-tight">
+            <h1 className="font-['Montserrat'] text-lg font-bold text-[#1f3759] leading-tight">
               Sri Basaveshwara
             </h1>
-            <p className="text-xs text-muted-foreground">
+            <p className="font-['Anek_Kannada'] font-semibold text-xs text-[#1f3759]/80">
               Graminabhirudhi Trust (R.)
             </p>
           </div>
@@ -48,9 +48,9 @@ export function Header() {
             <Link
               key={link.path}
               to={link.path}
-              className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${isActive(link.path)
-                  ? "text-gold bg-primary/5"
-                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+              className={`px-4 py-2 text-sm font-semibold font-['Montserrat'] rounded-md transition-colors ${isActive(link.path)
+                ? "text-[#960f1e] bg-[#960f1e]/5"
+                : "text-[#1f3759]/80 hover:text-[#1f3759] hover:bg-[#1f3759]/5"
                 }`}
             >
               {link.name}
@@ -122,9 +122,9 @@ export function Header() {
                     key={link.path}
                     to={link.path}
                     onClick={() => setIsOpen(false)}
-                    className={`px-4 py-3 text-base font-medium rounded-md transition-colors ${isActive(link.path)
-                        ? "text-gold bg-primary/5"
-                        : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                    className={`px-4 py-3 text-base font-semibold font-['Montserrat'] rounded-md transition-colors ${isActive(link.path)
+                      ? "text-[#960f1e] bg-[#960f1e]/5"
+                      : "text-[#1f3759]/80 hover:text-[#1f3759] hover:bg-[#1f3759]/5"
                       }`}
                   >
                     {link.name}

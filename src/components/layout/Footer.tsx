@@ -35,25 +35,26 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-gradient-navy text-primary-foreground">
+    <footer className="bg-[#1f3759] text-[#dfdcd3] font-['Anek_Kannada'] font-semibold">
       <div className="container py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/20 border border-gold/30">
-                <Shield className="h-6 w-6 text-gold" />
+              <div className="flex h-12 w-12 items-center justify-center  ">
+                <img src="/SBGA_F.png" alt="SBGA Logo" className="h-12 drop-shadow-8xl shadow-blue-500" />
+
               </div>
               <div>
-                <h2 className="font-display text-lg font-bold leading-tight">
+                <h2 className="font-['Montserrat'] text-lg font-bold leading-tight">
                   Sri Basaveshwara
                 </h2>
-                <p className="text-xs text-primary-foreground/70">
+                <p className="text-xs text-[#dfdcd3]/70">
                   Graminabhirudhi Trust (R.)
                 </p>
               </div>
             </Link>
-            <p className="text-sm text-primary-foreground/70 leading-relaxed mb-6">
+            <p className="text-sm text-[#dfdcd3]/70 leading-relaxed mb-6">
               {t("footer.tagline")}
             </p>
             <div className="space-y-3 text-sm">
@@ -88,7 +89,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-display text-lg font-semibold mb-4 text-gold">
+            <h3 className="font-['Montserrat'] text-lg font-semibold mb-4 text-[#960f1e]">
               {t("footer.ourServices")}
             </h3>
             <ul className="space-y-3">
@@ -97,7 +98,7 @@ export function Footer() {
                   <Link
                     to={link.path}
                     onClick={(e) => handleScrollTo(e, link.path)}
-                    className="text-sm text-primary-foreground/70 hover:text-gold transition-colors"
+                    className="text-sm text-[#dfdcd3]/70 hover:text-[#960f1e] transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -108,7 +109,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="font-display text-lg font-semibold mb-4 text-gold">
+            <h3 className="font-['Montserrat'] text-lg font-semibold mb-4 text-[#960f1e]">
               {t("footer.company")}
             </h3>
             <ul className="space-y-3">
@@ -117,7 +118,7 @@ export function Footer() {
                   <Link
                     to={link.path}
                     onClick={(e) => handleScrollTo(e, link.path)}
-                    className="text-sm text-primary-foreground/70 hover:text-gold transition-colors"
+                    className="text-sm text-[#dfdcd3]/70 hover:text-[#960f1e] transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -128,7 +129,7 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="font-display text-lg font-semibold mb-4 text-gold">
+            <h3 className="font-['Montserrat'] text-lg font-semibold mb-4 text-[#960f1e]">
               {t("footer.legal")}
             </h3>
             <ul className="space-y-3">
@@ -137,7 +138,7 @@ export function Footer() {
                   <Link
                     to={link.path}
                     onClick={(e) => handleScrollTo(e, link.path)}
-                    className="text-sm text-primary-foreground/70 hover:text-gold transition-colors"
+                    className="text-sm text-[#dfdcd3]/70 hover:text-[#960f1e] transition-colors"
                   >
                     {link.name}
                   </Link>

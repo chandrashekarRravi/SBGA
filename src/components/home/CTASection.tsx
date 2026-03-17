@@ -7,7 +7,7 @@ export function CTASection() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 bg-gradient-hero relative overflow-hidden">
+    <section className="py-24 bg-[#dfdcd3] relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -21,11 +21,11 @@ export function CTASection() {
 
       <div className="container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
+          <h2 className="font-['Montserrat'] text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1f3759] mb-6">
             {t("cta.title1")}{" "}
-            <span className="text-gradient-gold">{t("cta.titleHighlight")}</span>
+            <span className="text-[#960f1e]">{t("cta.titleHighlight")}</span>
           </h2>
-          <p className="text-lg text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
+          <p className="font-['Anek_Kannada'] font-semibold text-lg text-[#1f3759]/80 mb-10 max-w-2xl mx-auto">
             {t("cta.description")}
           </p>
 
@@ -44,7 +44,7 @@ export function CTASection() {
             </Button>
           </div>
 
-          <p className="mt-8 text-sm text-primary-foreground/60">
+          <p className="mt-8 font-semibold font-['Anek_Kannada'] text-sm text-[#1f3759]/60">
             {t("cta.noHidden")}
           </p>
         </div>

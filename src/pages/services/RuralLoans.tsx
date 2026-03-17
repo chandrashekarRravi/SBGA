@@ -31,21 +31,21 @@ const RuralLoans = () => {
       <Header />
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-gradient-hero py-20 relative overflow-hidden">
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl" />
+        <section className="bg-[#1f3759] py-20 relative overflow-hidden">
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#960f1e]/10 rounded-full blur-3xl" />
           <div className="container relative z-10">
             <div className="max-w-3xl mx-auto text-center">
-              <Link to="/services" className="inline-flex items-center gap-2 text-gold hover:text-gold/80 text-sm mb-6 transition-colors">
+              <Link to="/services" className="inline-flex items-center gap-2 text-[#960f1e] hover:text-[#960f1e]/80 text-sm mb-6 transition-colors font-['Anek_Kannada'] font-semibold">
                 <ArrowLeft className="h-4 w-4" />
                 {t("nav.services")}
               </Link>
               <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-blue-500/10 mb-6 mx-auto">
                 <Landmark className="h-10 w-10 text-blue-600" />
               </div>
-              <h1 className="font-display text-4xl sm:text-5xl font-bold text-primary-foreground mb-4">
+              <h1 className="font-['Montserrat'] text-4xl sm:text-5xl font-bold text-[#dfdcd3] mb-4">
                 {t("services.ruralLoans")}
               </h1>
-              <p className="text-xl text-primary-foreground/80">
+              <p className="font-['Anek_Kannada'] font-semibold text-xl text-[#dfdcd3]/80">
                 {t("services.ruralLoansDesc")}
               </p>
             </div>
@@ -53,30 +53,30 @@ const RuralLoans = () => {
         </section>
 
         {/* Details */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-[#dfdcd3]">
           <div className="container">
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <div>
-                <h2 className="font-display text-3xl font-bold text-foreground mb-6">
+                <h2 className="font-['Montserrat'] text-3xl font-bold text-[#1f3759] mb-6">
                   Key Features
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-3 mb-8">
                   {features.map((feature) => (
                     <div key={feature} className="flex items-center gap-2">
-                      <div className="w-5 h-5 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
-                        <Check className="h-3 w-3 text-gold" />
+                      <div className="w-5 h-5 rounded-full bg-[#960f1e]/10 flex items-center justify-center flex-shrink-0">
+                        <Check className="h-3 w-3 text-[#960f1e]" />
                       </div>
-                      <span className="text-sm text-muted-foreground">{feature}</span>
+                      <span className="font-['Anek_Kannada'] font-semibold text-sm text-[#1f3759]/80">{feature}</span>
                     </div>
                   ))}
                 </div>
 
-                <h3 className="font-display text-xl font-semibold text-foreground mb-4">Eligibility & Documents</h3>
+                <h3 className="font-['Montserrat'] text-xl font-semibold text-[#1f3759] mb-4">Eligibility & Documents</h3>
                 <div className="grid sm:grid-cols-2 gap-3 mb-8">
                   {eligibility.map((item) => (
                     <div key={item} className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-gold" />
-                      <span className="text-sm text-muted-foreground">{item}</span>
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#960f1e]" />
+                      <span className="font-['Anek_Kannada'] font-semibold text-sm text-[#1f3759]/80">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -93,9 +93,9 @@ const RuralLoans = () => {
                 <div className="absolute top-0 right-0 w-40 h-40 bg-blue-500/5 rounded-full blur-2xl" />
                 <div className="relative z-10 text-center mb-8">
                   <div className="inline-block px-6 py-2 rounded-full bg-blue-500/10 mb-4">
-                    <span className="font-display text-4xl font-bold text-foreground">9%</span>
+                    <span className="font-['Montserrat'] text-4xl font-bold text-[#1f3759]">9%</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">Starting Rate</p>
+                  <p className="font-['Anek_Kannada'] font-semibold text-sm text-[#1f3759]/80">Starting Rate</p>
                 </div>
                 <div className="bg-muted/50 rounded-xl p-6">
                   <div className="flex items-center gap-2 text-muted-foreground mb-4">
@@ -114,7 +114,7 @@ const RuralLoans = () => {
                     <div className="h-px bg-border my-2" />
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">{t("servicesPage.maturityAmount")}</span>
-                      <span className="font-bold text-gold text-lg">₹1,08,500</span>
+                      <span className="font-['Montserrat'] font-bold text-[#960f1e] text-lg">₹1,08,500</span>
                     </div>
                   </div>
                 </div>
@@ -124,13 +124,13 @@ const RuralLoans = () => {
         </section>
 
         {/* CTA */}
-        <section className="py-20 bg-gradient-hero">
+        <section className="py-20 bg-[#dfdcd3]">
           <div className="container">
             <div className="max-w-2xl mx-auto text-center">
-              <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">
+              <h2 className="font-['Montserrat'] text-3xl font-bold text-[#1f3759] mb-4">
                 {t("servicesPage.readyTitle")}
               </h2>
-              <p className="text-primary-foreground/80 mb-8">
+              <p className="font-['Anek_Kannada'] font-semibold text-[#1f3759]/80 mb-8">
                 {t("servicesPage.readyDesc")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

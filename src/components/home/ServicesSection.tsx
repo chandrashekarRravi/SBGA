@@ -46,14 +46,14 @@ export function ServicesSection() {
       <div className="container">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/10 text-gold text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#960f1e]/10 text-[#960f1e] text-sm font-semibold font-['Montserrat'] mb-4">
             {t("services.badge")}
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-['Montserrat'] text-3xl sm:text-4xl font-bold text-[#1f3759] mb-4">
             {t("services.title1")}{" "}
-            <span className="text-gradient-gold">{t("services.titleHighlight")}</span>
+            <span className="text-[#960f1e]">{t("services.titleHighlight")}</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="font-['Anek_Kannada'] font-semibold text-lg text-[#1f3759]/80">
             {t("services.description")}
           </p>
         </div>
@@ -72,18 +72,18 @@ export function ServicesSection() {
               </div>
 
               {/* Content */}
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+              <h3 className="font-['Montserrat'] text-xl font-semibold text-[#1f3759] mb-3">
                 {service.title}
               </h3>
-              <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+              <p className="font-['Anek_Kannada'] font-semibold text-[#1f3759]/80 text-sm mb-4 leading-relaxed">
                 {service.description}
               </p>
 
               {/* Features */}
               <ul className="space-y-2 mb-6">
                 {service.features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <div className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  <li key={feature} className="flex items-center gap-2 text-sm text-[#1f3759]/80 font-['Anek_Kannada'] font-semibold">
+                    <div className="h-1.5 w-1.5 rounded-full bg-[#960f1e]" />
                     {feature}
                   </li>
                 ))}

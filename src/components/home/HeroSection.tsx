@@ -7,7 +7,7 @@ export function HeroSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative overflow-hidden bg-gradient-hero min-h-[90vh] flex items-center">
+    <section className="relative overflow-hidden bg-[#dfdcd3] min-h-[90vh] flex items-center">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -23,18 +23,18 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/10 border border-gold/20 text-gold text-sm font-medium animate-fade-up">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#960f1e]/10 border border-[#960f1e]/20 text-[#960f1e] text-sm font-semibold font-['Montserrat'] animate-fade-up">
               <Shield className="h-4 w-4" />
               {t("hero.badge")}
             </div>
 
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            <h1 className="font-['Montserrat'] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1f3759] leading-tight animate-fade-up" style={{ animationDelay: "0.1s" }}>
               {t("hero.title1")}{" "}
-              <span className="text-gradient-gold">{t("hero.titleHighlight")}</span>{" "}
+              <span className="text-[#960f1e]">{t("hero.titleHighlight")}</span>{" "}
               {t("hero.title2")}
             </h1>
 
-            <p className="text-lg sm:text-xl text-primary-foreground/80 max-w-xl mx-auto lg:mx-0 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+            <p className="font-['Anek_Kannada'] font-semibold text-lg sm:text-xl text-[#1f3759]/80 max-w-xl mx-auto lg:mx-0 animate-fade-up" style={{ animationDelay: "0.2s" }}>
               {t("hero.description")}
             </p>
 
@@ -58,7 +58,7 @@ export function HeroSection() {
                 className="rounded-2xl shadow-2xl border border-primary-foreground/10 object-cover w-full max-w-md h-[420px]"
               />
               {/* Floating Badge */}
-              <div className="absolute -top-4 -right-4 bg-gold text-navy-dark px-4 py-2 rounded-full shadow-lg font-semibold text-sm">
+              <div className="absolute -top-4 -right-4 bg-[#960f1e] text-[#dfdcd3] px-4 py-2 rounded-full shadow-lg font-['Montserrat'] font-semibold text-sm">
                 {t("hero.secureTrusted")}
               </div>
             </div>

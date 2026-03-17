@@ -18,14 +18,14 @@ export function FeaturesSection() {
       <div className="container">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#960f1e]/10 text-[#960f1e] text-sm font-semibold font-['Montserrat'] mb-4">
             {t("features.badge")}
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-['Montserrat'] text-3xl sm:text-4xl font-bold text-[#1f3759] mb-4">
             {t("features.title1")}{" "}
-            <span className="text-gradient-gold">{t("features.titleHighlight")}</span>
+            <span className="text-[#960f1e]">{t("features.titleHighlight")}</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="font-['Anek_Kannada'] font-semibold text-lg text-[#1f3759]/80">
             {t("features.description")}
           </p>
         </div>
@@ -38,13 +38,13 @@ export function FeaturesSection() {
               className="group relative bg-card rounded-xl p-8 border border-border hover:border-gold/30 hover:shadow-lg transition-all duration-300"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-navy mb-6 group-hover:shadow-gold-glow transition-shadow">
-                <feature.icon className="h-8 w-8 text-gold" />
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#1f3759] mb-6 group-hover:shadow-[0_4px_20px_0_rgba(150,15,30,0.25)] transition-shadow">
+                <feature.icon className="h-8 w-8 text-[#960f1e]" />
               </div>
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+              <h3 className="font-['Montserrat'] text-xl font-semibold text-[#1f3759] mb-3">
                 {feature.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="font-['Anek_Kannada'] font-semibold text-[#1f3759]/80 leading-relaxed">
                 {feature.description}
               </p>
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-gold/5 to-transparent rounded-tr-xl rounded-bl-[100px] opacity-0 group-hover:opacity-100 transition-opacity" />

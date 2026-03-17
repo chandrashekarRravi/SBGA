@@ -77,17 +77,17 @@ const Contact = () => {
       <Header />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-hero py-20 relative overflow-hidden">
+        <section className="bg-[#1f3759] py-20 relative overflow-hidden">
           <div className="absolute top-0 left-1/4 w-72 h-72 bg-gold/10 rounded-full blur-3xl" />
           <div className="container relative z-10">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/10 text-gold text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#960f1e]/10 text-[#960f1e] text-sm font-semibold font-['Montserrat'] mb-6">
                 {t("contact.badge")}
               </div>
-              <h1 className="font-display text-4xl sm:text-5xl font-bold text-primary-foreground mb-6">
-                {t("contact.title1")} <span className="text-gradient-gold">{t("contact.titleHighlight")}</span>
+              <h1 className="font-['Montserrat'] text-4xl sm:text-5xl font-bold text-[#dfdcd3] mb-6">
+                {t("contact.title1")} <span className="text-[#960f1e]">{t("contact.titleHighlight")}</span>
               </h1>
-              <p className="text-xl text-primary-foreground/80">
+              <p className="font-['Anek_Kannada'] font-semibold text-xl text-[#dfdcd3]/80">
                 {t("contact.description")}
               </p>
             </div>
