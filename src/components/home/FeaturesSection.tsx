@@ -39,7 +39,7 @@ export function FeaturesSection() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#1f3759] mb-6 group-hover:shadow-[0_4px_20px_0_rgba(150,15,30,0.25)] transition-shadow">
-                <feature.icon className="h-8 w-8 text-[#960f1e]" />
+                <feature.icon className="h-8 w-8 text-[#dfdcd3]" />
               </div>
               <h3 className="font-['Montserrat'] text-xl font-semibold text-[#1f3759] mb-3">
                 {feature.title}

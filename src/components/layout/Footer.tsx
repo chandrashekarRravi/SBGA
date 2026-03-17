@@ -89,7 +89,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-['Montserrat'] text-lg font-semibold mb-4 text-[#960f1e]">
+            <h3 className="font-['Montserrat'] text-lg font-semibold mb-4 text-[#960f1e]/90">
               {t("footer.ourServices")}
             </h3>
             <ul className="space-y-3">

@@ -140,9 +140,8 @@ const Services = () => {
                 <div
                   key={service.id}
                   id={service.id}
-                  className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
-                    index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                  }`}
+                  className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                    }`}
                 >
                   {/* Content */}
                   <div className={index % 2 === 1 ? "lg:order-2" : ""}>
@@ -156,7 +155,7 @@ const Services = () => {
                     <p className="font-['Anek_Kannada'] font-semibold text-[#1f3759]/80 mb-6 leading-relaxed">
                       {service.description}
                     </p>
-                    
+
                     <div className="grid sm:grid-cols-2 gap-3 mb-8">
                       {service.features.map((feature) => (
                         <div key={feature} className="flex items-center gap-2">
@@ -180,7 +179,7 @@ const Services = () => {
                   <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                     <div className="bg-card rounded-2xl border border-border p-8 relative overflow-hidden">
                       <div className={`absolute top-0 right-0 w-40 h-40 ${service.color}/5 rounded-full blur-2xl`} />
-                      
+
                       {/* Highlight Badge */}
                       <div className="relative z-10 text-center mb-8">
                         <div className={`inline-block px-6 py-2 rounded-full ${service.color}/10 mb-4`}>
@@ -221,8 +220,9 @@ const Services = () => {
           </div>
         </section>
 
-        {/* Additional Services */}
-        <section className="py-20 bg-[#dfdcd3]/30">
+        {/* Additional Services
+        
+<section className="py-20 bg-[#dfdcd3]/30">
           <div className="container">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="font-['Montserrat'] text-3xl font-bold text-[#1f3759] mb-4">
@@ -252,6 +252,9 @@ const Services = () => {
           </div>
         </section>
 
+        */}
+
+
         {/* CTA */}
         <section className="py-20 bg-[#dfdcd3]">
           <div className="container">
@@ -269,9 +272,9 @@ const Services = () => {
                     <ArrowRight className="h-4 w-4 ml-2" />
                   </Link>
                 </Button>
-                <Button variant="heroOutline" size="lg" asChild>
+                {/* <Button variant="heroOutline" size="lg" asChild>
                   <Link to="/login">{t("nav.customerLogin")}</Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>

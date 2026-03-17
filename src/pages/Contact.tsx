@@ -206,7 +206,7 @@ const Contact = () => {
                   <div className="space-y-4">
                     <div className="flex items-start gap-4 p-4 rounded-xl bg-muted/50">
                       <div className="w-10 h-10 rounded-lg bg-gradient-navy flex items-center justify-center flex-shrink-0">
-                        <MapPin className="h-5 w-5 text-[#960f1e]" />
+                        <MapPin className="h-5 w-5 text-[#dfdcd3]" />
                       </div>
                       <div>
                         <div className="font-semibold text-foreground">{t("footer.headOffice")}</div>
@@ -219,7 +219,7 @@ const Contact = () => {
 
                     <div className="flex items-start gap-4 p-4 rounded-xl bg-muted/50">
                       <div className="w-10 h-10 rounded-lg bg-gradient-navy flex items-center justify-center flex-shrink-0">
-                        <Phone className="h-5 w-5 text-[#960f1e]" />
+                        <Phone className="h-5 w-5 text-[#dfdcd3]" />
                       </div>
                       <div>
                         <div className="font-semibold text-foreground">{t("contact.phone")}</div>
@@ -232,7 +232,7 @@ const Contact = () => {
 
                     <div className="flex items-start gap-4 p-4 rounded-xl bg-muted/50">
                       <div className="w-10 h-10 rounded-lg bg-gradient-navy flex items-center justify-center flex-shrink-0">
-                        <Mail className="h-5 w-5 text-[#960f1e]" />
+                        <Mail className="h-5 w-5 text-[#dfdcd3]" />
                       </div>
                       <div>
                         <div className="font-semibold text-foreground">{t("login.email")}</div>
@@ -245,7 +245,7 @@ const Contact = () => {
 
                     <div className="flex items-start gap-4 p-4 rounded-xl bg-muted/50">
                       <div className="w-10 h-10 rounded-lg bg-gradient-navy flex items-center justify-center flex-shrink-0">
-                        <Clock className="h-5 w-5 text-[#960f1e]" />
+                        <Clock className="h-5 w-5 text-[#dfdcd3]" />
                       </div>
                       <div>
                         <div className="font-semibold text-foreground">{t("contact.workingHours")}</div>

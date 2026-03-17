@@ -87,7 +87,7 @@ export function AboutSection() {
               className="text-center p-6 rounded-xl bg-card border border-border hover:shadow-lg hover:border-[#960f1e]/30 transition-all"
             >
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-[#1f3759] mb-4">
-                <value.icon className="h-7 w-7 text-[#960f1e]" />
+                <value.icon className="h-7 w-7 text-[#dfdcd3]" />
               </div>
               <h3 className="font-['Montserrat'] text-lg font-semibold text-[#1f3759] mb-2">
                 {value.title}
