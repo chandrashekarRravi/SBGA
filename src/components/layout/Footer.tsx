@@ -59,7 +59,7 @@ export function Footer() {
             </p>
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-3">
-                <MapPin className="h-4 w-4 text-gold mt-1 flex-shrink-0" />
+                <MapPin className="h-4 w-4 text-[#960f1e] mt-1 flex-shrink-0" />
                 <span className="text-primary-foreground/70">
                   123 Main Street, Rural District,
                   <br />
@@ -67,19 +67,19 @@ export function Footer() {
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="h-4 w-4 text-gold flex-shrink-0" />
+                <Phone className="h-4 w-4 text-[#960f1e] flex-shrink-0" />
                 <span className="text-primary-foreground/70">
                   +91 1234 567 890
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="h-4 w-4 text-gold flex-shrink-0" />
+                <Mail className="h-4 w-4 text-[#960f1e] flex-shrink-0" />
                 <span className="text-primary-foreground/70">
                   info@sbgatrust.org
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <Clock className="h-4 w-4 text-gold flex-shrink-0" />
+                <Clock className="h-4 w-4 text-[#960f1e] flex-shrink-0" />
                 <span className="text-primary-foreground/70">
                   Mon - Sat: 9:00 AM - 5:00 PM
                 </span>

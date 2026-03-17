@@ -78,7 +78,7 @@ const Contact = () => {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-[#1f3759] py-20 relative overflow-hidden">
-          <div className="absolute top-0 left-1/4 w-72 h-72 bg-gold/10 rounded-full blur-3xl" />
+          <div className="absolute top-0 left-1/4 w-72 h-72 bg-[#960f1e]/10 rounded-full blur-3xl" />
           <div className="container relative z-10">
             <div className="max-w-3xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#960f1e]/10 text-[#960f1e] text-sm font-semibold font-['Montserrat'] mb-6">
@@ -206,7 +206,7 @@ const Contact = () => {
                   <div className="space-y-4">
                     <div className="flex items-start gap-4 p-4 rounded-xl bg-muted/50">
                       <div className="w-10 h-10 rounded-lg bg-gradient-navy flex items-center justify-center flex-shrink-0">
-                        <MapPin className="h-5 w-5 text-gold" />
+                        <MapPin className="h-5 w-5 text-[#960f1e]" />
                       </div>
                       <div>
                         <div className="font-semibold text-foreground">{t("footer.headOffice")}</div>
@@ -219,7 +219,7 @@ const Contact = () => {
 
                     <div className="flex items-start gap-4 p-4 rounded-xl bg-muted/50">
                       <div className="w-10 h-10 rounded-lg bg-gradient-navy flex items-center justify-center flex-shrink-0">
-                        <Phone className="h-5 w-5 text-gold" />
+                        <Phone className="h-5 w-5 text-[#960f1e]" />
                       </div>
                       <div>
                         <div className="font-semibold text-foreground">{t("contact.phone")}</div>
@@ -232,7 +232,7 @@ const Contact = () => {
 
                     <div className="flex items-start gap-4 p-4 rounded-xl bg-muted/50">
                       <div className="w-10 h-10 rounded-lg bg-gradient-navy flex items-center justify-center flex-shrink-0">
-                        <Mail className="h-5 w-5 text-gold" />
+                        <Mail className="h-5 w-5 text-[#960f1e]" />
                       </div>
                       <div>
                         <div className="font-semibold text-foreground">{t("login.email")}</div>
@@ -245,7 +245,7 @@ const Contact = () => {
 
                     <div className="flex items-start gap-4 p-4 rounded-xl bg-muted/50">
                       <div className="w-10 h-10 rounded-lg bg-gradient-navy flex items-center justify-center flex-shrink-0">
-                        <Clock className="h-5 w-5 text-gold" />
+                        <Clock className="h-5 w-5 text-[#960f1e]" />
                       </div>
                       <div>
                         <div className="font-semibold text-foreground">{t("contact.workingHours")}</div>
@@ -267,7 +267,7 @@ const Contact = () => {
           <div className="container">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="font-display text-3xl font-bold text-foreground mb-4">
-                {t("contact.branches")} <span className="text-gradient-gold">{t("contact.branchesHighlight")}</span>
+                {t("contact.branches")} <span className="text-[#960f1e]">{t("contact.branchesHighlight")}</span>
               </h2>
               <p className="text-muted-foreground">
                 {t("contact.branchesDesc")}
@@ -281,8 +281,8 @@ const Contact = () => {
                   className="bg-card rounded-xl border border-border p-6 hover:shadow-lg transition-shadow"
                 >
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center">
-                      <Building2 className="h-5 w-5 text-gold" />
+                    <div className="w-10 h-10 rounded-lg bg-[#960f1e]/10 flex items-center justify-center">
+                      <Building2 className="h-5 w-5 text-[#960f1e]" />
                     </div>
                     <h3 className="font-display text-lg font-semibold text-foreground">
                       {branch.name}
@@ -290,19 +290,19 @@ const Contact = () => {
                   </div>
                   <div className="space-y-3 text-sm">
                     <div className="flex items-start gap-2 text-muted-foreground">
-                      <MapPin className="h-4 w-4 text-gold mt-0.5 flex-shrink-0" />
+                      <MapPin className="h-4 w-4 text-[#960f1e] mt-0.5 flex-shrink-0" />
                       <span>{branch.address}</span>
                     </div>
                     <div className="flex items-center gap-2 text-muted-foreground">
-                      <Phone className="h-4 w-4 text-gold flex-shrink-0" />
+                      <Phone className="h-4 w-4 text-[#960f1e] flex-shrink-0" />
                       <span>{branch.phone}</span>
                     </div>
                     <div className="flex items-center gap-2 text-muted-foreground">
-                      <Mail className="h-4 w-4 text-gold flex-shrink-0" />
+                      <Mail className="h-4 w-4 text-[#960f1e] flex-shrink-0" />
                       <span>{branch.email}</span>
                     </div>
                     <div className="flex items-center gap-2 text-muted-foreground">
-                      <Clock className="h-4 w-4 text-gold flex-shrink-0" />
+                      <Clock className="h-4 w-4 text-[#960f1e] flex-shrink-0" />
                       <span>{branch.hours}</span>
                     </div>
                   </div>

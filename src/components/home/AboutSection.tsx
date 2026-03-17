@@ -84,7 +84,7 @@ export function AboutSection() {
           {values.map((value) => (
             <div
               key={value.title}
-              className="text-center p-6 rounded-xl bg-card border border-border hover:shadow-lg hover:border-gold/30 transition-all"
+              className="text-center p-6 rounded-xl bg-card border border-border hover:shadow-lg hover:border-[#960f1e]/30 transition-all"
             >
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-[#1f3759] mb-4">
                 <value.icon className="h-7 w-7 text-[#960f1e]" />

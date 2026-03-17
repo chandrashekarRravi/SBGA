@@ -92,7 +92,7 @@ export function ServicesSection() {
               {/* Link */}
               <Link
                 to={service.link}
-                className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-gold transition-colors group/link"
+                className="inline-flex items-center gap-2 text-sm font-medium text-[#1f3759] hover:text-[#960f1e] transition-colors group/link"
               >
                 {t("services.learnMore")}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover/link:translate-x-1" />

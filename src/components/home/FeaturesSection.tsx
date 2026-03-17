@@ -35,7 +35,7 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="group relative bg-card rounded-xl p-8 border border-border hover:border-gold/30 hover:shadow-lg transition-all duration-300"
+              className="group relative bg-card rounded-xl p-8 border border-border hover:border-[#960f1e]/30 hover:shadow-lg transition-all duration-300"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#1f3759] mb-6 group-hover:shadow-[0_4px_20px_0_rgba(150,15,30,0.25)] transition-shadow">
@@ -47,7 +47,7 @@ export function FeaturesSection() {
               <p className="font-['Anek_Kannada'] font-semibold text-[#1f3759]/80 leading-relaxed">
                 {feature.description}
               </p>
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-gold/5 to-transparent rounded-tr-xl rounded-bl-[100px] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-[#960f1e]/5 to-transparent rounded-tr-xl rounded-bl-[100px] opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
           ))}
         </div>

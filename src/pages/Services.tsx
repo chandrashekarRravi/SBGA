@@ -160,8 +160,8 @@ const Services = () => {
                     <div className="grid sm:grid-cols-2 gap-3 mb-8">
                       {service.features.map((feature) => (
                         <div key={feature} className="flex items-center gap-2">
-                          <div className="w-5 h-5 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
-                            <Check className="h-3 w-3 text-gold" />
+                          <div className="w-5 h-5 rounded-full bg-[#960f1e]/10 flex items-center justify-center flex-shrink-0">
+                            <Check className="h-3 w-3 text-[#960f1e]" />
                           </div>
                           <span className="text-sm text-muted-foreground">{feature}</span>
                         </div>
@@ -209,7 +209,7 @@ const Services = () => {
                           <div className="h-px bg-border my-2" />
                           <div className="flex justify-between">
                             <span className="text-muted-foreground">{t("servicesPage.maturityAmount")}</span>
-                            <span className="font-bold text-gold text-lg">₹1,08,500</span>
+                            <span className="font-bold text-[#960f1e] text-lg">₹1,08,500</span>
                           </div>
                         </div>
                       </div>
@@ -237,7 +237,7 @@ const Services = () => {
               {additionalServices.map((service) => (
                 <div
                   key={service.title}
-                  className="bg-card rounded-xl p-6 border border-border hover:shadow-lg hover:border-gold/30 transition-all"
+                  className="bg-card rounded-xl p-6 border border-border hover:shadow-lg hover:border-[#960f1e]/30 transition-all"
                 >
                   <div className="w-12 h-12 rounded-xl bg-[#1f3759] flex items-center justify-center mb-4">
                     <service.icon className="h-6 w-6 text-[#960f1e]" />

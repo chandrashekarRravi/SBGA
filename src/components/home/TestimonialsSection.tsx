@@ -54,7 +54,7 @@ export function TestimonialsSection() {
             >
               <div className="absolute -top-4 left-8">
                 <div className="w-8 h-8 rounded-full bg-[#960f1e] flex items-center justify-center shadow-md">
-                  <Quote className="h-4 w-4 text-[#1f3759]" />
+                  <Quote className="h-4 w-4 text-[#dfdcd3]" />
                 </div>
               </div>
               <div className="flex items-center gap-1 mb-4 pt-2">
